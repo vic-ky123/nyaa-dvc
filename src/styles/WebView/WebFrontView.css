@@ -1,1 +1,110 @@
 /* ********************* Contains the CSS for the Web Front View Component ********************* */
+
+.web-front-view-container {
+  width: 650px;
+  height: 300px;
+  border-radius: 10px;
+  /* opacity: 0.75; */
+  /* filter: drop-shadow(0 0 5px #c9c8c8); */
+  background-color: white;
+  /* backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%); */
+}
+
+.web-front-view-bg {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.web-front-view-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 10px 0 0 10px;
+  height: 100%;
+  background: linear-gradient(
+    to right bottom,
+    rgb(6, 158, 87),
+    rgb(136, 255, 0),
+    yellow 
+  );
+  clip-path: circle(50% at 12% 21%);
+}
+
+/* .web-front-view-bg::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+    height: 100%;
+    background: linear-gradient(
+      150deg,
+      rgb(63, 107, 87),
+      rgb(136, 255, 0),
+      yellow
+    );
+    clip-path: circle(50% at 12% 15%);
+  } */
+
+.web-front-view-bg::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  border-radius: 0 0 10px 0;
+  height: 100%;
+  background: linear-gradient(to left bottom, yellow, green 10%);
+  clip-path: circle(20% at 98% 95%);
+}
+
+/* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
+
+.web-front-view-bg-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 650px;
+  height: 300px;
+}
+
+.web-front-view-logo-part {
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+  /* opacity: 0.75; */
+  /* background-color: white; */
+  /* backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%); */
+}
+
+/* .web-front-view-logo-part::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+    height: 100%;
+    background: linear-gradient(red, blue);
+    clip-path: circle(25% at 12% 15%);
+} */
+
+/* .web-front-view-logo-part::after {
+     backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+} */

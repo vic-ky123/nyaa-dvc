@@ -2,11 +2,12 @@
 import React from "react";
 import { useMediaQuery } from 'react-responsive';
 
+// Style imports ---
+import "../../styles/Home.css";
+
 // Component imports ---
 import WebViewCard from '../CardComponent/WebViewCard';
 import MobileViewCard from '../CardComponent/MobileViewCard';
-
-// Style imports ---
 
 const Home = () => {
 
@@ -17,7 +18,7 @@ const Home = () => {
 
     return (
         <>
-            <div>
+            <div className="home-main-container">
                 {isSmallScreen &&
                     <>
                         <div>

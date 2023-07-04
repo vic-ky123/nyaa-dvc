@@ -9,8 +9,6 @@ import "../../styles/WebView/WebViewCard.css";
 import WebFrontView from "../WebView/WebFrontView";
 import WebRearView from "../WebView/WebRearView";
 
-// Assets imports ---
-
 const WebViewCard = () => {
 
     const [flip, setFlip] = useState(false);
@@ -21,7 +19,7 @@ const WebViewCard = () => {
 
     return (
         <>
-            <div>
+            <div className="web-view-card-container">
                 <ReactCardFlip isFlipped={flip} flipDirection="horizontal" flipSpeedFrontToBack={0.7} flipSpeedBackToFront={0.7}>
                     <WebFrontView flipToBack = {() => flipCard()} />
                     <WebRearView flipToFront = {() => flipCard()} />
