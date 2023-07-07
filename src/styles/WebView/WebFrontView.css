@@ -29,9 +29,9 @@
   height: 100%;
   background: linear-gradient(
     to right bottom,
-    rgb(6, 158, 87),
-    rgb(136, 255, 0),
-    yellow 
+    rgb(7, 104, 59),
+    rgb(37, 156, 13),
+    rgb(157, 255, 0) 
   );
   clip-path: circle(50% at 12% 21%);
 }
@@ -61,7 +61,7 @@
   width: 100%;
   border-radius: 0 0 10px 0;
   height: 100%;
-  background: linear-gradient(to left bottom, yellow, green 10%);
+  background: linear-gradient(to left bottom, yellow, rgb(3, 184, 3) 10%);
   clip-path: circle(20% at 98% 95%);
 }
 
