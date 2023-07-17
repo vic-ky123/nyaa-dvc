@@ -1,47 +1,48 @@
 /* ********************* Contains the CSS for the Web Rear View Component ********************* */
 
 .web-rear-view-container {
-    width: 650px;
-    height: 300px;
-    border-radius: 10px;
-    /* background: linear-gradient(to right bottom, rgb(6, 65, 6) 15%, rgb(6, 100, 6), green, rgb(30, 255, 0)); */
-    /* background: url("../../assets/images/green-bg.avif");
+  width: 650px;
+  height: 300px;
+  border-radius: 10px;
+  /* background: linear-gradient(to right bottom, rgb(6, 65, 6) 15%, rgb(6, 100, 6), green, rgb(30, 255, 0)); */
+  /* background: url("../../assets/images/green-bg.avif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%; */
-    background: radial-gradient(
-    /* rgb(103, 165, 3), */
+  /* background: radial-gradient(
+    rgb(103, 165, 3),
     rgb(29, 139, 7),
     rgb(4, 36, 9)
-  );
-  }
-  
-  .web-rear-view-bg-holder {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 1;
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    width: 650px;
-    height: 300px;
-  }
-  
-  .web-rear-view-logo-part {
-    padding: 10px;
-    border-radius: 10px 0 0 10px;
-    /* opacity: 0.75; */
-    /* background-color: white; */
-    /* backdrop-filter: blur(16px) saturate(180%);
+  ); */
+  background: linear-gradient(0deg, rgba(0,0,0,1) 4%, rgba(0, 0, 0, 0) 40%), radial-gradient(circle at 20% 70%, #218c00 0%, #01220c 65%);
+}
+
+.web-rear-view-bg-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 650px;
+  height: 300px;
+}
+
+.web-rear-view-logo-part {
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+  /* opacity: 0.75; */
+  /* background-color: white; */
+  /* backdrop-filter: blur(16px) saturate(180%);
       -webkit-backdrop-filter: blur(16px) saturate(180%); */
-  }
-  
-  /* .web-rear-view-logo-part::before {
+}
+
+/* .web-rear-view-logo-part::before {
       content: "";
       position: absolute;
       top: 0;
@@ -52,8 +53,8 @@
       background: linear-gradient(red, blue);
       clip-path: circle(25% at 12% 15%);
   } */
-  
-  /* .web-rear-view-logo-part::after {
+
+/* .web-rear-view-logo-part::after {
        backdrop-filter: blur(16px) saturate(180%);
       -webkit-backdrop-filter: blur(16px) saturate(180%);
   } */

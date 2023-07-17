@@ -11,59 +11,19 @@
     -webkit-backdrop-filter: blur(16px) saturate(180%); */
 }
 
-.web-front-view-bg {
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.web-front-view-bg::before {
+.web-front-view-primary-bg {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  border-radius: 10px 0 0 10px;
   height: 100%;
-  background: linear-gradient(
-    to right bottom,
-    rgb(7, 104, 59),
-    rgb(37, 156, 13),
-    rgb(157, 255, 0) 
-  );
-  clip-path: circle(50% at 12% 21%);
+  border-radius: 10px;
+  /* background-color: #22a807; */
+  background: conic-gradient(from 45deg at 60% 50%, #3db615, #FFFFFF);
 }
 
-/* .web-front-view-bg::before {
-    content: "";
-    position: absolute;
-    top: 50px;
-    right: 40px;
-    width: 100%;
-    border-radius: 10px 0 0 10px;
-    height: 100%;
-    background: linear-gradient(
-      150deg,
-      rgb(63, 107, 87),
-      rgb(136, 255, 0),
-      yellow
-    );
-    clip-path: circle(50% at 12% 15%);
-  } */
 
-.web-front-view-bg::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  border-radius: 0 0 10px 0;
-  height: 100%;
-  background: linear-gradient(to left bottom, yellow, rgb(3, 184, 3) 10%);
-  clip-path: circle(20% at 98% 95%);
-}
 
 /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
 
@@ -72,7 +32,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  z-index: 1;
+  /* z-index: 1; */
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(14px);
@@ -86,10 +46,27 @@
 .web-front-view-logo-part {
   padding: 10px;
   border-radius: 10px 0 0 10px;
+  /* background-color: #075aa8;
+  width: 100%;
+  height: 100%; */
   /* opacity: 0.75; */
   /* background-color: white; */
   /* backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%); */
+}
+
+.web-front-view-details-part {
+  /* content: ""; */
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* border-radius: 10px; */
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  background-color: #22a807;
+  background: conic-gradient(from 45deg at 60% 50%, #3db615, #FFFFFF);
 }
 
 /* .web-front-view-logo-part::before {
